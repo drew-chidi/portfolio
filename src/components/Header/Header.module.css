@@ -1,0 +1,105 @@
+.header {
+  color: white;
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../../assets/image_background.png) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-color: #000000;
+  display: block;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text_container {
+  display: block;
+  font-weight: 400;
+  font-stretch: normal;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #4d5055;
+}
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.header .h1_large {
+  margin-bottom: 1.75rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-family: "Poppins";
+  display: block;
+  /* margin-block-start: 0.67em; */
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.btn_solid_lg {
+  display: inline-block;
+  padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+  border: 1px solid #0b36a8;
+  background-color: #0b36a8;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+}
+.header .btn_outline_lg {
+  padding: 1.625rem 1.625rem 1.625rem 1.625rem;
+  border: none;
+  color: #ffffff;
+
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+/*************************/
+/*     Media Queries     */
+/*************************/
+/* Min-width 768px */
+@media (min-width: 768px) {
+  /* Header */
+  .header {
+    padding-top: 11rem;
+    padding-bottom: 9rem;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    padding-top: 15rem;
+    padding-bottom: 14rem;
+    text-align: left;
+  }
+  .text_container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    /* padding-top: 18.25rem;
+    padding-bottom: 17.25rem; */
+  }
+  .header .h1_large {
+    font-size: 3.75rem;
+    line-height: 4.625rem;
+  }
+}

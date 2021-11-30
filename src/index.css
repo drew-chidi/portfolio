@@ -1,13 +1,345 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* global Variables */
+.bg_gray {
+  background-color: #24262a;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  color: #4d5055;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4d5055;
+  text-decoration: underline;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+p {
+  color: #4d5055;
+  font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #24262a;
+  font-weight: 700;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-family: "Poppins";
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: "Poppins";
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-family: "Poppins";
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Poppins";
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-family: "Poppins";
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-family: "Poppins";
+}
+
+/* .p-large {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+
+.p-small {
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+
+.testimonial-text {
+	font-style: italic;
+}
+
+.testimonial-author {
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.li-space-lg li {
+	margin-bottom: 0.5rem;
+} */
+
+/* .no-line {
+  text-decoration: none;
+}
+
+.no-line:hover {
+  text-decoration: none;
+}
+
+.blue {
+  color: #2259ec;
+} */
+
+/* .bg-gray {
+  background-color: #f7f9fb;
+}
+
+.section-divider {
+  display: block;
+  height: 1px;
+  margin: 0;
+  border: none;
+  background-color: #d3dae2;
+}
+
+.btn-solid-reg {
+  display: inline-block;
+  padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+  border: 1px solid #0b36a8;
+  background-color: #0b36a8;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+  background-color: transparent;
+  color: #0b36a8; 
+  text-decoration: none;
+}
+
+.btn-solid-lg {
+  display: inline-block;
+  padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+  border: 1px solid #0b36a8;
+  background-color: #0b36a8;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+  background-color: transparent;
+  color: #0b36a8; 
+  text-decoration: none;
+}
+
+.btn-outline-reg {
+  display: inline-block;
+  padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+  border: 1px solid #24262a;
+  background-color: transparent;
+  color: #24262a;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-reg:hover {
+  background-color: #24262a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-outline-lg {
+  display: inline-block;
+  padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+  border: 1px solid #24262a;
+  background-color: transparent;
+  color: #24262a;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-lg:hover {
+  background-color: #24262a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-outline-sm {
+  display: inline-block;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border: 1px solid #24262a;
+  background-color: transparent;
+  color: #24262a;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-sm:hover {
+  background-color: #24262a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.label-control {
+  position: absolute;
+  top: 0.875rem;
+  left: 1.5rem;
+  color: #7d838a;
+  opacity: 1;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  cursor: text;
+  transition: all 0.2s ease;
+}
+
+.form-control-input:focus + .label-control,
+.form-control-input.notEmpty + .label-control,
+.form-control-textarea:focus + .label-control,
+.form-control-textarea.notEmpty + .label-control {
+  top: 0.125rem;
+  color: #4d5055;
+  opacity: 1;
+  font-size: 0.75rem;
+  font-weight: 700;
+} */
+
+/* .form-control-input,
+.form-control-select {
+  display: block;
+  width: 100%;
+  padding-top: 1.125rem;
+  padding-bottom: 0.125rem;
+  padding-left: 1.5rem;
+  border: 1px solid #cbcbd1;
+  background-color: #ffffff;
+  color: #4d5055;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  transition: all 0.2s;
+  -webkit-appearance: none; 
+}
+
+.form-control-select {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: 3.25rem;
+  color: #7d838a;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-image: url("../images/down-arrow.png");
+  background-position: 96% 50%;
+  background-repeat: no-repeat;
+  outline: none;
+} */
+
+.form-control-textarea {
+  display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+  width: 100%;
+  height: 14rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+  padding-top: 1.5rem;
+  padding-left: 1.3125rem;
+  border: 1px solid #cbcbd1;
+  background-color: #ffffff;
+  color: #4d5055;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  transition: all 0.2s;
+}
+
+.form-control-input:focus,
+.form-control-select:focus,
+.form-control-textarea:focus {
+  border: 1px solid #a1a1a1;
+  outline: none; /* Removes blue border on focus */
+}
+
+.form-control-input:hover,
+.form-control-select:hover,
+.form-control-textarea:hover {
+  border: 1px solid #a1a1a1;
+}
+
+.checkbox {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+input[type="checkbox"] {
+  vertical-align: -10%;
+  margin-right: 0.5rem;
+}
+
+.form-control-submit-button {
+  display: inline-block;
+  width: 100%;
+  height: 3.25rem;
+  border: 1px solid #0b36a8;
+  border-radius: 32px;
+  background-color: #0b36a8;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form-control-submit-button:hover {
+  border: 1px solid #24262a;
+  background-color: transparent;
+  color: #24262a;
 }
