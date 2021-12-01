@@ -5,6 +5,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(../../assets/image_background.png) center center no-repeat;
   background-size: cover;
+  background-position: bottom right;
   text-align: center;
   background-color: #000000;
   display: block;
@@ -74,6 +75,11 @@
 /*     Media Queries     */
 /*************************/
 /* Min-width 768px */
+@media (min-width: 640px) {
+  .header {
+    background-position: center;
+  }
+}
 @media (min-width: 768px) {
   /* Header */
   .header {
