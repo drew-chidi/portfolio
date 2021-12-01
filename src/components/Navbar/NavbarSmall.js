@@ -6,6 +6,11 @@ import { FaGithub } from "react-icons/fa";
 
 const NavbarMobile = () => {
   const [background, setBackground] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const toggleHandler = () => {
+    setOpen(!open);
+  };
 
   const navBackgroundHandler = () => {
     if (window.scrollY >= 80) {
@@ -26,11 +31,16 @@ const NavbarMobile = () => {
           type='button'
           data-toggle='offcanvas'
         >
-          <FiMenu className={classes.navbar_toggler_icon} />
+          <FiMenu
+            className={classes.navbar_toggler_icon}
+            onClick={toggleHandler}
+          />
         </button>
 
         <div
-          className={`${classes.offcanvas_collapse} ${classes.navbar_collapse}`}
+          className={`${classes.offcanvas_collapse} ${
+            open && classes.navbar_collapse
+          }`}
           id='navbarsExampleDefault'
         >
           <ul className={classes.navbar_nav}>

@@ -47,6 +47,7 @@
   /* color: white; */
 }
 .navbar_collapse {
+  visibility: hidden;
 }
 .offcanvas_collapse {
   position: fixed;
@@ -59,7 +60,6 @@
   padding-right: 1rem;
   padding-left: 1rem;
   overflow-y: auto;
-  visibility: hidden;
   background-color: #24262a;
 }
 
@@ -82,7 +82,6 @@
   text-decoration: none;
   transition: all 0.2s ease;
   display: block;
-  /* page scroll */
 }
 
 /* Social Icons and Buttons*/
@@ -105,57 +104,17 @@
   color: #0a66c2;
   border: 0;
   padding: 0px;
-
-  /* border-radius: 100%; */
 }
-
-/* Media Query */
-
-/* @media screen and (min-width: 1025px) {
-  .navbar {
-    background-color: transparent;
-  }
-  .container {
-    max-width: 1330px;
-  }
-} */
 
 /*************************/
 /*     Media Queries     */
 /*************************/
 /* Min-width 768px */
 @media (min-width: 768px) {
-  /* Services */
-  /* .basic-2 .text-box {
-    padding-right: 2.125rem;
-    padding-left: 2.125rem;
-  } */
-  /* end of services */
-
-  /* Extra Pages */
-  /* .ex-basic-1 .text-box {
-    padding: 1.75rem 2rem 0.875rem 2rem;
-  } */
-  /* end of extra pages */
 }
-/* end of min-width 768px */
 
 /* Min-width 992px */
 @media (min-width: 992px) {
-  /* General Styles */
-  /* .h2-heading {
-    width: 35.25rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .p-heading {
-    width: 46rem;
-    margin-right: auto;
-    margin-left: auto;
-  } */
-  /* end of general styles */
-
   /* Navigation */
   .navbar {
     padding: 1.75rem 0;
@@ -167,12 +126,6 @@
     background-color: #24262a !important;
   }
 
-  /* .navbar.top-nav-collapse {
-    padding-top: 0.5rem;
-    padding-top: 0.5rem;
-    background-color: #24262a;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
-  } */
   .navbar_toggler {
     display: none;
   }
@@ -227,124 +180,12 @@
     margin-right: 0;
     margin-left: 0.25rem;
   }
-  /* end of navigation */
-
-  /* Details */
-  /* .split {
-    height: 760px;
-  } */
-
-  /* .split .area-1 {
-    height: 100%;
-    width: 50%;
-    display: inline-block;
-  } */
-
-  /* .split .area-2 {
-    height: 100%;
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-  } */
-
-  /* .split .text-container {
-    width: 400px;
-    margin-left: 3rem;
-  } */
-  /* end of details */
-
-  /* Testimonials */
-  /* .cards-1 .card {
-    display: inline-block;
-    width: 290px;
-    vertical-align: top;
-  }
-
-  .cards-1 .card:nth-of-type(3n + 2) {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-  }
-
-  .cards-1 .card-body {
-    text-align: left;
-  }
-
-  .cards-1 .details {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cards-1 .details .text {
-    flex-direction: column;
-  }
-
-  .cards-1 .details img {
-    margin-right: 1.125rem;
-  } */
-  /* end of testimonials */
-
-  /* Accordion */
-  /* .accordion-1 .accordion {
-    width: 730px;
-    margin-right: auto;
-    margin-left: auto;
-  } */
-  /* end of accordion */
-
-  /* Contact */
-  /* .form-1 form {
-    width: 790px;
-    margin-right: auto;
-    margin-left: auto;
-  } */
-  /* end of contact */
-
-  /* Extra Pages */
-  /* .ex-cards-1 .card {
-    display: inline-block;
-    width: 296px;
-    vertical-align: top;
-  }
-
-  .ex-cards-1 .card:nth-of-type(3n + 2) {
-    margin-right: 1rem;
-    margin-left: 1rem;
-  } */
-  /* end of extra pages */
-}
-/* end of min-width 992px */
-
-/* Min-width 1200px */
-@media (min-width: 1200px) {
-  /* General Styles */
-  .h1_large {
-    font-size: 3.75rem;
-    line-height: 4.625rem;
-  }
-  /* end of general styles */
 
   /* Navigation */
   .navbar .container {
     max-width: 1330px;
   }
-  /* end of navigation */
 
-  /* About */
-  /* .basic-1 .text_container.first {
-    margin-right: 2rem;
-  }
-
-  .basic-1 .text_container.second {
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-
-  .basic-1 .text-container.third {
-    margin-left: 2rem;
-  } */
-  /* end of about */
-
-  /* Details */
   .split {
     height: 700px;
   }
@@ -375,6 +216,4 @@
     margin-right: 2.875rem;
     margin-left: 2.875rem;
   }
-  /* end of extra pages */
 }
-/* end of min-width 1200px */
