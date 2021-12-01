@@ -59,6 +59,10 @@
   line-height: 0;
   text-decoration: none;
 }
+.btn_solid_lg:hover {
+  text-decoration: none;
+  color: #81858b;
+}
 .header .btn_outline_lg {
   padding: 1.625rem 1.625rem 1.625rem 1.625rem;
   border: none;

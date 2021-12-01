@@ -13,7 +13,11 @@ const Hero = () => {
                   Hi, I'm Andrew. <br />
                   I'm a Frontend Dev.{" "}
                 </h1>
-                <a className={classes.btn_solid_lg} href='#about'>
+                <a
+                  target='blank'
+                  className={classes.btn_solid_lg}
+                  href='https://drive.google.com/file/d/1aIO3wAq28KOeWI8G4kfOgIFRT6HrgXZY/view?usp=drivesdk'
+                >
                   Download CV
                 </a>
                 <a className={classes.btn_outline_lg} href='#contact'>
