@@ -9,7 +9,7 @@ const NavbarMobile = () => {
   const [open, setOpen] = useState(false);
 
   const toggleHandler = () => {
-    setOpen(!open);
+    setOpen((open) => !open);
   };
 
   const navBackgroundHandler = () => {
@@ -39,7 +39,7 @@ const NavbarMobile = () => {
 
         <div
           className={`${classes.offcanvas_collapse} ${
-            open && classes.navbar_collapse
+            !open && classes.navbar_collapse
           }`}
           id='navbarsExampleDefault'
         >
@@ -68,12 +68,12 @@ const NavbarMobile = () => {
           </ul>
           <span className={`${classes.nav_item} ${classes.social_icons}`}>
             <button className={classes.s_stack}>
-              <a href='#your-link'>
+              <a href='https://www.linkedin.com/in/andrew-ofuenweuche-797a31aa/'>
                 <FaLinkedin className={classes.fa_linkedin} />
               </a>
             </button>
             <button className={classes.s_stack}>
-              <a href='#your-link'>
+              <a href='https://github.com/drew-chidi/'>
                 <FaGithub className={classes.fa_github} />
               </a>
             </button>
