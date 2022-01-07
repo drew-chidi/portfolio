@@ -44,18 +44,15 @@
   vertical-align: middle;
   content: "";
   background: 50% / 100% 100% no-repeat;
-  /* color: white; */
 }
 .navbar_collapse {
   visibility: hidden;
 }
 .offcanvas_collapse {
   position: fixed;
-  /* top: 3.25rem; */
   top: 2.2rem;
   bottom: 0;
   left: 0;
-  /* left: 100%; */
   width: 30%;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -94,11 +91,7 @@
   border: 0;
   margin-right: 1rem;
 }
-/* .s_stack a {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-} */
+
 .fa_linkedin {
   background-color: white;
   color: #0a66c2;
