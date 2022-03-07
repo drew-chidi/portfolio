@@ -11,11 +11,11 @@ const AboutMe = () => {
 
             <div className={classes.text_container}>
               <p>
-                I love to create beautiful and efficient websites. With 8months
-                experience, I have a passion for responsive website design and a
-                proponent of mobile first approach. I currently aim to learn as
-                much as I can in a work environment and further my own abilities
-                in a professional setting.
+                I love to create beautiful and efficient websites. With 18
+                months experience, I have a passion for responsive website
+                design and a proponent of mobile first approach. I currently aim
+                to learn as much as I can in a work environment and further my
+                own abilities in a professional setting.
               </p>
             </div>
           </div>

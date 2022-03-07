@@ -5,6 +5,7 @@ import portfolio from "../../assets/portfolio_screenshot.png";
 import space from "../../assets/Space_Travel.png";
 import tip from "../../assets/tip-calculator-project.png";
 import calculator from "../../assets/calculator-app.png";
+import ecommerce from "../../assets/ecommerce_screenshot.png";
 
 const Projects = (props) => {
   return (
@@ -13,7 +14,6 @@ const Projects = (props) => {
         <div>
           <h2 className={classes.h2_heading}>A Few Of My Recent Projects</h2>
           <p className={classes.p_heading}>
-            {" "}
             Listed below are some of the most representative projects I've
             worked on. They range from basic web design to advanced web
             development for online shops
@@ -21,6 +21,31 @@ const Projects = (props) => {
         </div>
         <div className={classes.items}>
           <div className={classes.column}>
+            <div className={classes.text_container}>
+              <div className={classes.image_container}>
+                <a href='https://ecommerce-product-page-drew.netlify.app/'>
+                  <img
+                    className={classes.img_fluid}
+                    src={ecommerce}
+                    alt='Space Tourism'
+                  />
+                </a>
+              </div>
+              <p className={classes.details}>
+                <span>
+                  <strong>Live-site:</strong>
+                  <a href='https://ecommerce-product-page-drew.netlify.app/'>
+                    Site
+                  </a>
+                </span>
+                <span>
+                  <strong>GitHub:</strong>
+                  <a href='https://github.com/drew-chidi/ecommerce-product-page'>
+                    details
+                  </a>
+                </span>
+              </p>
+            </div>
             <div className={classes.text_container}>
               <div className={classes.image_container}>
                 <a href='https://space-tourism-drew.netlify.app'>
@@ -33,7 +58,6 @@ const Projects = (props) => {
               </div>
               <p className={classes.details}>
                 <span>
-                  {" "}
                   <strong>Live-site:</strong>
                   <a href='https://space-tourism-drew.netlify.app'>Site</a>
                 </span>
