@@ -6,6 +6,7 @@ import space from "../../assets/Space_Travel.png";
 import tip from "../../assets/tip-calculator-project.png";
 import calculator from "../../assets/calculator-app.png";
 import ecommerce from "../../assets/ecommerce_screenshot.png";
+import reactshop from "../../assets/reactshopbydrew.png";
 
 const Projects = (props) => {
   return (
@@ -21,6 +22,27 @@ const Projects = (props) => {
         </div>
         <div className={classes.items}>
           <div className={classes.column}>
+            <div className={classes.text_container}>
+              <div className={classes.image_container}>
+                <a href='https://reactshopbydrew.netlify.app/'>
+                  <img
+                    className={classes.img_fluid}
+                    src={reactshop}
+                    alt='ecommerce store'
+                  />
+                </a>
+              </div>
+              <p className={classes.details}>
+                <span>
+                  <strong>Live-site:</strong>
+                  <a href='https://reactshopbydrew.netlify.app/'>Site</a>
+                </span>
+                <span>
+                  <strong>GitHub:</strong>
+                  <a href='https://github.com/drew-chidi/reactshop'>details</a>
+                </span>
+              </p>
+            </div>
             <div className={classes.text_container}>
               <div className={classes.image_container}>
                 <a href='https://ecommerce-product-page-drew.netlify.app/'>
