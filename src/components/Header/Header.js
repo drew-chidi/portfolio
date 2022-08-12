@@ -16,7 +16,7 @@ const Hero = () => {
                 <a
                   target='blank'
                   className={classes.btn_solid_lg}
-                  href='https://drive.google.com/file/d/1aIO3wAq28KOeWI8G4kfOgIFRT6HrgXZY/view?usp=drivesdk'
+                  href='https://drive.google.com/file/d/1vSUAQbPekl-P1GYS4WxNYSNrO15bewlR/view?usp=sharing'
                 >
                   Download CV
                 </a>

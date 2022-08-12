@@ -34,7 +34,11 @@ const Contact = () => {
           <div className={classes.row}>
             <div className={classes.col_lg_12}>
               {/*Contact Form  */}
-              <form id='contactForm'>
+              <form
+                id='contactForm'
+                action='https://formsubmit.co/el/huraba'
+                method='POST'
+              >
                 <div className={classes.form_group}>
                   <input
                     type='text'
