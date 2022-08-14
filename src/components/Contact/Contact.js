@@ -36,7 +36,7 @@ const Contact = () => {
               {/*Contact Form  */}
               <form
                 id='contactForm'
-                action='https://formsubmit.co/el/huraba'
+                action='https://formsubmit.co/chidi.andrew@gmail.com'
                 method='POST'
               >
                 <div className={classes.form_group}>
