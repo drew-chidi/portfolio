@@ -39,9 +39,6 @@ const Home = () => {
                 Contact Me
               </a>
             </div>
-            {/* <div className={classes.imgWrapper}>
-              <img src={Andrew} alt='andrew' className={classes.img} />
-            </div> */}
           </div>
         </div>
       </section>
