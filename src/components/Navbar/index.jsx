@@ -13,8 +13,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [background, setBackground] = useState(false);
   const [open, setOpen] = useState(false);
 
-  console.log(open);
-
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.mode);
 
@@ -25,7 +23,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const handleTheme = () => {
     dispatch(toggleTheme());
   };
-  console.log(theme);
 
   const navBackgroundHandler = () => {
     if (window.scrollY >= 80) {
@@ -55,9 +52,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             onClick={handleTheme}
           >
             {theme === "dark" ? (
-              <BsSun className={classes.navbar_toggler_icon} size={24} />
+              <BsSun className={classes.navbar_toggler_icon} size={16} />
             ) : (
-              <FaMoon className={classes.navbar_toggler_icon} size={24} />
+              <FaMoon className={classes.navbar_toggler_icon} size={16} />
             )}
           </button>
 
@@ -68,11 +65,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             onClick={toggleHandler}
           >
             {!open ? (
-              <FiMenu className={classes.navbar_toggler_icon} size={24} />
+              <FiMenu className={classes.navbar_toggler_icon} size={16} />
             ) : (
               <AiOutlineClose
                 className={classes.navbar_toggler_icon}
-                size={24}
+                size={16}
               />
             )}
           </button>

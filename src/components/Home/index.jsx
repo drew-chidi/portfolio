@@ -1,4 +1,7 @@
+import { introdata } from "../../data";
 import React from "react";
+import Typewriter from "typewriter-effect";
+
 import classes from "./Home.module.css";
 
 const Home = () => {
@@ -9,10 +12,21 @@ const Home = () => {
           <div className={classes.row}>
             <div>
               <div className={classes.text_container}>
-                <h1 className={classes.h1_large}>
-                  Hi, I'm Andrew. <br />
-                  I'm a Frontend Dev.{" "}
-                </h1>
+                <h2 className={classes.h1_large}>
+                  {introdata.title} <br />
+                </h2>
+                <Typewriter
+                  options={{
+                    strings: [
+                      introdata.animated.first,
+                      introdata.animated.second,
+                      introdata.animated.third,
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 10,
+                  }}
+                />
                 <a
                   target='blank'
                   className={classes.btn_solid_lg}

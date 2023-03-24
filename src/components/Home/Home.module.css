@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: bottom right;
   text-align: center;
-  background-color: #000000;
+  /* background-color: #000000; */
   display: block;
 }
 .container {
@@ -23,7 +23,6 @@
   font-stretch: normal;
   font-size: 1rem;
   line-height: 1.625rem;
-  color: #4d5055;
 }
 
 .row {
