@@ -1,0 +1,15 @@
+.navbar {
+  display: block;
+  background-color: crimson;
+  padding-top: 1.75rem;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1025px) {
+  .navbar {
+    display: none;
+  }
+}
