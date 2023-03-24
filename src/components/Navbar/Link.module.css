@@ -1,0 +1,9 @@
+.active {
+  color: coral;
+}
+.link {
+  transition-duration: 500;
+}
+.link:hover {
+  color: coral;
+}
