@@ -26,19 +26,22 @@
   padding: 0 20px;
 }
 
-/* .row {
-  display: flex;
+.row {
+  /* display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px;
-} */
+  margin-left: -15px; */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
 
 .header .h1_large {
   margin-bottom: 1.75rem;
-  color: #ffffff;
+  /* color: #ffffff; */
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.35rem;
   line-height: 1.5;
   font-family: "Poppins";
   display: block;
@@ -53,8 +56,16 @@
   hyphens: auto;
   margin-top: 0;
   margin-bottom: 1rem;
+  max-width: 490px;
+  line-height: 1.5;
 }
-
+.imgWrapper {
+  position: absolute;
+  right: 0;
+}
+.img {
+  aspect-ratio: 1;
+}
 .btn_solid_lg {
   display: inline-block;
   padding: 1.625rem 2.625rem 1.625rem 2.625rem;
@@ -85,38 +96,29 @@
 /*************************/
 /*     Media Queries     */
 /*************************/
-/* Min-width 768px */
 @media (min-width: 640px) {
   .header {
     background-position: center;
   }
 }
 @media (min-width: 768px) {
-  /* Header */
   .header {
     padding-top: 11rem;
     padding-bottom: 9rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   .header {
     padding-top: 15rem;
     padding-bottom: 14rem;
     text-align: left;
   }
-  .text_container {
-    /* width: 100%;
-    padding-right: 15px;
-    padding-left: 15px; */
-  }
-}
-@media (min-width: 1200px) {
-  .header {
-    /* padding-top: 18.25rem;
-    padding-bottom: 17.25rem; */
-  }
   .header .h1_large {
-    font-size: 3.75rem;
-    line-height: 4.625rem;
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.125rem;
+    margin-bottom: 1.2rem;
   }
 }

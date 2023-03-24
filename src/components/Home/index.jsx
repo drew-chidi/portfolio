@@ -1,5 +1,5 @@
 import { introdata } from "../../data";
-import React from "react";
+import Andrew from "../../assets/image_background.webp";
 import Typewriter from "typewriter-effect";
 
 import classes from "./Home.module.css";
@@ -39,6 +39,9 @@ const Home = () => {
                 Contact Me
               </a>
             </div>
+            {/* <div className={classes.imgWrapper}>
+              <img src={Andrew} alt='andrew' className={classes.img} />
+            </div> */}
           </div>
         </div>
       </section>
