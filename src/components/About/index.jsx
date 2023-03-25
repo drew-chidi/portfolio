@@ -1,9 +1,18 @@
 import React from "react";
-import classes from "./AboutMe.module.css";
+import { useSelector } from "react-redux";
+import classes from "./About.module.css";
 
-const AboutMe = () => {
+const About = () => {
+  const theme = useSelector((state) => state.theme.mode);
+  console.log(theme);
+
   return (
-    <div id='about' className={`${classes.s_about} ${classes.target_section}`}>
+    <section
+      id='about'
+      className={`${classes.s_about} ${classes.target_section} ${
+        theme === "dark" && classes.themeMode
+      }`}
+    >
       <div className={classes.container}>
         <div className={classes.row}>
           <div className={classes.column}>
@@ -39,8 +48,8 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default AboutMe;
+export default About;

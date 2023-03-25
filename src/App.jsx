@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import AboutSection from "./components/AboutSection/AboutMe";
+import About from "./components/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -44,9 +44,7 @@ function App() {
         />
       </header>
       <Home />
-      <section>
-        <AboutSection />
-      </section>
+      <About />
       <section id='details'>
         <Services />
       </section>

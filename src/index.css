@@ -23,15 +23,33 @@ html {
   box-sizing: inherit;
 }
 
+/* GLOBAL VARIABLES */
+:root {
+  --clr-primary-light: #007bff;
+  --bg-primary-light: #fff;
+  --bg-gray-light: #f8f9fa;
+  --clr-border-light: #d3d3d3;
+  --clr-title-light: #343a40;
+  --clr-text-light: #212529;
+  --clr-input-light: #6c757d;
+  --clr-title-dark: #f8f9fa;
+  --clr-text-dark: #f8f9fa;
+  --clr-input-dark: #ced4da;
+  --bg-gray-dark: #343a40;
+  --clr-primary-dark: #ffc107;
+  --bg-primary-dark: #343a40;
+  --clr-border-dark: #6c757d;
+}
+
 /* Themes */
 .light {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--bg-primary-light);
+  color: var(--clr-text-light);
 }
 
 .dark {
-  background-color: #333;
-  color: white;
+  background-color: var(--bg-primary-dark);
+  color: var(--clr-text-dark);
 }
 
 /* Custom Styles */
