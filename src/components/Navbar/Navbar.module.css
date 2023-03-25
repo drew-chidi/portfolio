@@ -1,11 +1,8 @@
 .header {
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  /* display: block; */
-  /* background-color: #24262a; */
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5;
@@ -15,7 +12,6 @@
   right: 0;
   left: 0;
   z-index: 999;
-  color: #fff;
 }
 
 .active_scroll_dark {
@@ -23,7 +19,6 @@
 }
 .active_scroll_light {
   background-color: var(--bg-gray-light);
-  color: var(--clr-text-light);
 }
 
 .container {

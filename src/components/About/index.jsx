@@ -4,7 +4,6 @@ import classes from "./About.module.css";
 
 const About = () => {
   const theme = useSelector((state) => state.theme.mode);
-  console.log(theme);
 
   return (
     <section

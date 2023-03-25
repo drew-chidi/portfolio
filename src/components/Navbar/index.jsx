@@ -10,7 +10,7 @@ import Link from "./Link";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
-  const [background, setBackground] = useState(false);
+  // const [background, setBackground] = useState(false);
   const [open, setOpen] = useState(false);
 
   const dispatch = useDispatch();
@@ -24,36 +24,28 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     dispatch(toggleTheme());
   };
 
-  const navBackgroundHandler = () => {
-    if (window.scrollY >= 0) {
-      setBackground(true);
-    } else {
-      setBackground(false);
-    }
-  };
-  window.addEventListener("scroll", navBackgroundHandler);
+  // const navBackgroundHandler = () => {
+  //   if (window.scrollY >= 0) {
+  //     setBackground(true);
+  //   } else {
+  //     setBackground(false);
+  //   }
+  // };
+  // window.addEventListener("scroll", navBackgroundHandler);
 
   let active_scroll =
-    background && theme === "light"
+    theme === "light"
       ? classes.active_scroll_light
-      : background && theme === "dark"
+      : theme === "dark"
       ? classes.active_scroll_dark
       : null;
 
-  console.log(active_scroll);
-
   return (
-    // <div
-    //   className={`${classes.header} ${
-    //     background && classes.active_scroll
-    //   } ${theme}`}
-    // >
     <div className={`${classes.header} ${active_scroll}`}>
       <div className={classes.container}>
         <div>
           <p>{`<>...</>`}</p>
         </div>
-
         <div className={classes.navLinks_theme_container}>
           {/* LIGHT & DARK THEMES TOGGLER */}
           <button
