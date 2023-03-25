@@ -25,7 +25,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   };
 
   const navBackgroundHandler = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 0) {
       setBackground(true);
     } else {
       setBackground(false);
@@ -33,12 +33,22 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   };
   window.addEventListener("scroll", navBackgroundHandler);
 
+  let active_scroll =
+    background && theme === "light"
+      ? classes.active_scroll_light
+      : background && theme === "dark"
+      ? classes.active_scroll_dark
+      : null;
+
+  console.log(active_scroll);
+
   return (
-    <div
-      className={`${classes.header} ${
-        background && classes.active_scroll
-      } ${theme}`}
-    >
+    // <div
+    //   className={`${classes.header} ${
+    //     background && classes.active_scroll
+    //   } ${theme}`}
+    // >
+    <div className={`${classes.header} ${active_scroll}`}>
       <div className={classes.container}>
         <div>
           <p>{`<>...</>`}</p>
@@ -78,7 +88,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
       {/* Mobile Screen Nav */}
       {open && (
-        <nav className={`${classes.navWrapper_mobile} ${theme}`}>
+        <nav className={`${classes.navWrapper_mobile}`}>
           <ul className={classes.navbar_menu}>
             <li className={classes.nav_item}>
               <Link
@@ -117,7 +127,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       )}
 
       {/* Desktop Screen Nav */}
-      <nav className={`${classes.navWrapper_desktop} ${theme}`}>
+      <nav className={`${classes.navWrapper_desktop}`}>
         <ul className={classes.navbar_menu_desktop}>
           <li className={classes.nav_item}>
             <Link

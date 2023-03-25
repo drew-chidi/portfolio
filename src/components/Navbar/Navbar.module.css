@@ -15,12 +15,15 @@
   right: 0;
   left: 0;
   z-index: 999;
-  /* color: inherit;
-  background-color: transparent; */
+  color: #fff;
 }
 
-.active_scroll {
-  background-color: inherit;
+.active_scroll_dark {
+  background-color: var(--bg-gray-dark);
+}
+.active_scroll_light {
+  background-color: var(--bg-gray-light);
+  color: var(--clr-text-light);
 }
 
 .container {

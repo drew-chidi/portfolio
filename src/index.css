@@ -57,6 +57,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 div,
+nav,
 button {
   background-color: inherit;
   color: inherit;
