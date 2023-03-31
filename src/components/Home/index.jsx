@@ -30,12 +30,12 @@ const Home = () => {
               <a
                 target='blank'
                 className={classes.btn_solid_lg}
-                href='https://drive.google.com/file/d/1vSUAQbPekl-P1GYS4WxNYSNrO15bewlR/view?usp=sharing'
+                href='https://drive.google.com/file/d/1TC-7-puRgXV6NenARXrW2L3q0kykf0Qw/view?usp=sharing'
               >
                 Download CV
               </a>
               <a className={classes.btn_outline_lg} href='#contact'>
-                Contact Me
+                Contact me
               </a>
             </div>
           </div>

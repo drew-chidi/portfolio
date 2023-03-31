@@ -8,6 +8,7 @@ import { BsSun } from "react-icons/bs";
 import { toggleTheme } from "../../redux/slices/themeSlice";
 import Link from "./Link";
 import { AiOutlineClose } from "react-icons/ai";
+import Drew from "../../assets/drew.png";
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   // const [background, setBackground] = useState(false);
@@ -43,8 +44,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <div className={`${classes.header} ${active_scroll}`}>
       <div className={classes.container}>
-        <div>
-          <p>{`<>...</>`}</p>
+        <div className={classes.logoWrap}>
+          <img src={Drew} alt='Andrew' />
         </div>
         <div className={classes.navLinks_theme_container}>
           {/* LIGHT & DARK THEMES TOGGLER */}
@@ -106,11 +107,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
             </li>
-            <li className={classes.nav_item}>
+            {/* <li className={classes.nav_item}>
               <a class={classes.nav_link} href='#'>
                 Blog
               </a>
-            </li>
+            </li> */}
             <li className={classes.nav_item}>
               <Link className={classes.nav_link} page='Contact' />
             </li>
@@ -145,11 +146,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
           </li>
-          <li className={classes.nav_item}>
+          {/* <li className={classes.nav_item}>
             <a class={classes.nav_link} href='#'>
               Blog
             </a>
-          </li>
+          </li> */}
           <li className={classes.nav_item}>
             <Link className={classes.nav_link} page='Contact' />
           </li>

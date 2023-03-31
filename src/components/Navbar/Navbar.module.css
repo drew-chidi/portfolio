@@ -33,6 +33,14 @@
   z-index: 1;
   background-color: inherit;
 }
+.logoWrap {
+  width: 36px;
+}
+
+.logoWrap img {
+  max-width: 100%;
+  border-radius: 100%;
+}
 
 .navLinks_theme_container {
   display: flex;
@@ -66,7 +74,6 @@
   top: 0;
   width: 100%;
   padding: 0 3rem;
-  /* margin: auto; */
 }
 
 .navbar_menu {
@@ -102,7 +109,7 @@
   .navbar_menu_desktop {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 3em;
   }
   .nav_item {
     font-size: 1rem;
