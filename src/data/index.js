@@ -38,20 +38,31 @@ const worktimeline = [
 
 const skills = [
   {
+    name: "HTML",
+  },
+  {
+    name: "CSS",
+  },
+  {
     name: "Javascript",
-    value: 90,
   },
   {
-    name: "React",
-    value: 85,
+    name: "React JS",
   },
   {
-    name: "Node JS",
-    value: 60,
+    name: "Electron JS",
+  },
+  {
+    name: "Next.JS",
+  },
+  {
+    name: "MongoDB",
+  },
+  {
+    name: "Node.JS",
   },
   {
     name: "Typescript",
-    value: 70,
   },
 ];
 
