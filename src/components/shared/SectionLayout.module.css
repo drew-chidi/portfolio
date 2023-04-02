@@ -1,0 +1,35 @@
+.s_wrapper {
+  padding-top: 2.5rem;
+  padding-bottom: 5.25rem;
+  background-color: #f7f9fb;
+}
+
+.themeMode {
+  background-color: #272c35;
+  background-color: #2b303b;
+  background-color: #32363c;
+  background-color: #1e1f23;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+.section_heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.divider {
+  margin: 1.5rem 0 !important;
+}
+
+/*************************/
+/*     Media Queries     */
+/*************************/
+@media (min-width: 768px) {
+  .section_heading {
+    font-size: 2.75rem;
+  }
+}

@@ -1,0 +1,9 @@
+.section_heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.divider {
+  margin: 1.5rem 0 !important;
+  /* border-color: black !important; */
+  /* border-color: var(--text-color)!important; */
+}
