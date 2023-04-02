@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
-import About from "./components/About";
-import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import Services from "./components/Services/Services";
-import Navbar from "./components/Navbar/";
-import { useSelector } from "react-redux";
-import Home from "./components/Home";
+import React, { useEffect, useState } from 'react';
+import About from './components/About';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import Services from './components/Services/Services';
+import Navbar from './components/Navbar/';
+import { useSelector } from 'react-redux';
+import Home from './components/Home';
 
 const SelectedPage = {
-  Home: "home",
-  About: "about",
-  Services: "services",
-  Blog: "blog",
-  Contact: "contact",
+  Home: 'home',
+  About: 'about',
+  Services: 'services',
+  Blog: 'blog',
+  Contact: 'contact',
 };
 
 function App() {
@@ -30,8 +30,8 @@ function App() {
       }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -45,9 +45,9 @@ function App() {
       </header>
       <Home />
       <About />
-      <section id='details'>
+      {/* <section id='details'>
         <Services />
-      </section>
+      </section> */}
       <section id='portfolio'>
         <Projects />
       </section>

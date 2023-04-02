@@ -31,10 +31,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 .row h3 {
   padding: 24px 0;
   font-size: 1.5rem;
+}
+.aboutme_p {
+  margin-bottom: 1em;
 }
 .table {
   width: 100%;
@@ -43,6 +47,13 @@
 }
 .caption_top {
   caption-side: top;
+}
+.table_row {
+  border-bottom: 1px solid gray;
+}
+.cell_wrapper {
+  padding: 0.5em;
+  text-align: left;
 }
 .skills_wrapper {
   display: flex;
@@ -55,6 +66,21 @@
   margin: auto;
   padding: 0.5em;
 }
+.service_wrapper {
+  padding: 1.5em 0;
+}
+.service_title {
+  padding: 8px 0;
+  border-bottom: 2px solid green;
+  font-size: 1.25rem;
+  margin-bottom: 0.5em;
+}
+.service_desc {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  word-break: break-word;
+  margin-bottom: 1rem;
+}
 
 /*************************/
 /*     Media Queries     */
@@ -66,7 +92,15 @@
 }
 @media (min-width: 1024px) {
   .row {
-    flex-direction: flex;
+    flex-direction: row;
+  }
+  .row h3 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+  .row .col {
+    flex: 0 0 auto;
+    width: 58.33333333%;
   }
 }
 
