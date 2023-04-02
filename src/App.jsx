@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import About from './components/About';
-import Projects from './components/Projects/Projects';
+import Projects from './components/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import Services from './components/Services/Services';
 import Navbar from './components/Navbar/';
 import { useSelector } from 'react-redux';
 import Home from './components/Home';
+import Portfolio from './components/Portfolio';
 
 const SelectedPage = {
   Home: 'home',
@@ -45,12 +45,11 @@ function App() {
       </header>
       <Home />
       <About />
-      {/* <section id='details'>
-        <Services />
-      </section> */}
-      <section id='portfolio'>
+      <Portfolio />
+
+      {/* <section id='portfolio'>
         <Projects />
-      </section>
+      </section> */}
       <section id='contact'>
         <Contact />
       </section>
