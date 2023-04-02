@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import About from './components/About';
 import Projects from './components/Portfolio';
-import Contact from './components/Contact/Contact';
+import Contact from './components/Contact';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/';
 import { useSelector } from 'react-redux';
@@ -46,13 +46,14 @@ function App() {
       <Home />
       <About />
       <Portfolio />
+      <Contact />
 
       {/* <section id='portfolio'>
         <Projects />
       </section> */}
-      <section id='contact'>
+      {/* <section id='contact'>
         <Contact />
-      </section>
+      </section> */}
       <section>
         <Footer />
       </section>

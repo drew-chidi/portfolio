@@ -6,7 +6,7 @@ const SectionLayout = ({ children, id, title }) => {
   const theme = useSelector((state) => state.theme.mode);
 
   return (
-    <div>
+    <>
       <section
         id={id}
         className={`${classes.s_wrapper} ${classes.target_section} ${
@@ -24,7 +24,7 @@ const SectionLayout = ({ children, id, title }) => {
           <Fragment>{children}</Fragment>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
