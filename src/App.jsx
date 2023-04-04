@@ -8,14 +8,6 @@ import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import { SelectedPage } from './shared';
 
-// export const SelectedPage = {
-//   Home: 'home',
-//   About: 'about',
-//   Services: 'services',
-//   Blog: 'blog',
-//   Contact: 'contact',
-// };
-
 function App() {
   const [selectedPage, setSelectedPage] = useState(SelectedPage.Home);
   const [isTopOfPage, setIsTopOfPage] = useState(true);
