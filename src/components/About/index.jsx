@@ -9,7 +9,7 @@ import {
 } from '../../data/index';
 import classes from './About.module.css';
 
-const About = () => {
+const About = ({}) => {
   const theme = useSelector((state) => state.theme.mode);
 
   // Invert Themes for skills List

@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import About from './components/About';
-import Projects from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/';
 import { useSelector } from 'react-redux';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
+import { SelectedPage } from './shared';
 
-const SelectedPage = {
-  Home: 'home',
-  About: 'about',
-  Services: 'services',
-  Blog: 'blog',
-  Contact: 'contact',
-};
+// export const SelectedPage = {
+//   Home: 'home',
+//   About: 'about',
+//   Services: 'services',
+//   Blog: 'blog',
+//   Contact: 'contact',
+// };
 
 function App() {
   const [selectedPage, setSelectedPage] = useState(SelectedPage.Home);
@@ -43,17 +43,10 @@ function App() {
           setSelectedPage={setSelectedPage}
         />
       </header>
-      <Home />
-      <About />
-      <Portfolio />
-      <Contact />
-
-      {/* <section id='portfolio'>
-        <Projects />
-      </section> */}
-      {/* <section id='contact'>
-        <Contact />
-      </section> */}
+      <Home setSelectedPage={setSelectedPage} />
+      <About setSelectedPage={setSelectedPage} />
+      <Portfolio setSelectedPage={setSelectedPage} />
+      <Contact setSelectedPage={setSelectedPage} />
       <section>
         <Footer />
       </section>
