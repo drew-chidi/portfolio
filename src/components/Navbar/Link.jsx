@@ -4,8 +4,6 @@ import classes from './Link.module.css';
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase().replace(/ /g, '');
 
-  console.log('2', lowerCasePage);
-
   return (
     <AnchorLink
       href={`#${lowerCasePage}`}

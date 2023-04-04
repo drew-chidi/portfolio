@@ -167,64 +167,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         </ul>
       </nav>
     </div>
-    // <nav className={`${classes.navbar} ${background && classes.active}`}>
-    //   <div className={classes.container}>
-    //     {/* Text Logo */}
-    //     <div>
-    //       <a href='/'>{`<>DREW</>`}</a>
-    //     </div>
-
-    //     <button class={classes.navbar_toggler} type='button'>
-    //       <FiMenu
-    //         className={classes.navbar_toggler_icon}
-    //         onClick={toggleHandler}
-    //       />
-    //     </button>
-
-    //     <div
-    //       className={`${classes.offcanvas_collapse} ${
-    //         !open && classes.navbar_collapse
-    //       }`}
-    //       id='navbarsExampleDefault'
-    //     >
-    //   <ul className={classes.navbar_nav}>
-    //     <li className={classes.nav_item}>
-    //       <a class={classes.nav_link} href='#header'>
-    //         Home
-    //       </a>
-    //     </li>
-    //     <li className={classes.nav_item}>
-    //       <a class={classes.nav_link} href='#about'>
-    //         About
-    //       </a>
-    //     </li>
-    //     <li className={classes.nav_item}>
-    //       <a class={classes.nav_link} href='#services'>
-    //         Services
-    //       </a>
-    //     </li>
-
-    //     <li className={classes.nav_item}>
-    //       <a className={classes.nav_link} href='#contact'>
-    //         Contact
-    //       </a>
-    //     </li>
-    //   </ul>
-    //       <span className={`${classes.nav_item} ${classes.social_icons}`}>
-    //         <button className={classes.s_stack}>
-    //           <a href='https://www.linkedin.com/in/andrew-ofuenweuche-797a31aa/'>
-    //             <FaLinkedin className={classes.fa_linkedin} />
-    //           </a>
-    //         </button>
-    //         <button className={classes.s_stack}>
-    //           <a href='https://github.com/drew-chidi/'>
-    //             <FaGithub className={classes.fa_github} />
-    //           </a>
-    //         </button>
-    //       </span>
-    //     </div>
-    //   </div>
-    // </nav>
   );
 };
 
