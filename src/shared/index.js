@@ -1,7 +1,7 @@
 export const SelectedPage = {
   Home: 'home',
   About: 'about',
-  Services: 'services',
+  Portfolio: 'portfolio',
   Blog: 'blog',
   Contact: 'contact',
 };

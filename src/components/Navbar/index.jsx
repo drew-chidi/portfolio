@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { FiMenu } from "react-icons/fi";
-import { FaLinkedin, FaMoon } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import classes from "./Navbar.module.css";
-import { BsSun } from "react-icons/bs";
-import { toggleTheme } from "../../redux/slices/themeSlice";
-import Link from "./Link";
-import { AiOutlineClose } from "react-icons/ai";
-import Drew from "../../assets/drew.png";
+import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { FiMenu } from 'react-icons/fi';
+import { FaLinkedin, FaMoon } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import classes from './Navbar.module.css';
+import { BsSun } from 'react-icons/bs';
+import { toggleTheme } from '../../redux/slices/themeSlice';
+import Link from './Link';
+import { AiOutlineClose } from 'react-icons/ai';
+import Drew from '../../assets/drew.png';
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   // const [background, setBackground] = useState(false);
@@ -35,9 +35,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   // window.addEventListener("scroll", navBackgroundHandler);
 
   let active_scroll =
-    theme === "light"
+    theme === 'light'
       ? classes.active_scroll_light
-      : theme === "dark"
+      : theme === 'dark'
       ? classes.active_scroll_dark
       : null;
 
@@ -54,7 +54,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             type='button'
             onClick={handleTheme}
           >
-            {theme === "dark" ? (
+            {theme === 'dark' ? (
               <BsSun className={classes.navbar_toggler_icon} size={16} />
             ) : (
               <FaMoon className={classes.navbar_toggler_icon} size={16} />
@@ -102,7 +102,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             <li className={classes.nav_item}>
               <Link
                 class={classes.nav_link}
-                page=' Services'
+                page=' Portfolio'
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
@@ -113,7 +113,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               </a>
             </li> */}
             <li className={classes.nav_item}>
-              <Link className={classes.nav_link} page='Contact' />
+              <Link
+                className={classes.nav_link}
+                page='Contact'
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
             </li>
           </ul>
         </nav>
@@ -141,7 +146,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           <li className={classes.nav_item}>
             <Link
               class={classes.nav_link}
-              page=' Services'
+              page=' Portfolio'
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -152,7 +157,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             </a>
           </li> */}
           <li className={classes.nav_item}>
-            <Link className={classes.nav_link} page='Contact' />
+            <Link
+              className={classes.nav_link}
+              page='Contact'
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
           </li>
         </ul>
       </nav>

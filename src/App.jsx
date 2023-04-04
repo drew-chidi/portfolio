@@ -22,6 +22,8 @@ function App() {
 
   const theme = useSelector((state) => state.theme.mode);
 
+  console.log('1', selectedPage);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {

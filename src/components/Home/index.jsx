@@ -1,12 +1,17 @@
-import { introdata } from "../../data";
-import Andrew from "../../assets/image_background.webp";
-import Typewriter from "typewriter-effect";
+import { introdata } from '../../data';
+import Typewriter from 'typewriter-effect';
+import { motion } from 'framer-motion';
+import { SelectedPage } from '../../shared';
 
-import classes from "./Home.module.css";
+import classes from './Home.module.css';
 
-const Home = () => {
+const Home = ({ setSelectedPage }) => {
   return (
-    <section id='home' className={classes.header}>
+    <motion.section
+      id='home'
+      className={classes.header}
+      onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
+    >
       <div className={classes.container}>
         <div className={classes.row}>
           <div className={classes.text_container}>
@@ -41,7 +46,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react';
 import { useSelector } from 'react-redux';
-import { SelectedPage } from '../../shared';
 import classes from './SectionLayout.module.css';
 import { motion } from 'framer-motion';
 
-const SectionLayout = ({ children, id, title, setSelectedPage }) => {
+const SectionLayout = ({ children, id, title }) => {
   const theme = useSelector((state) => state.theme.mode);
 
   return (
@@ -14,10 +13,7 @@ const SectionLayout = ({ children, id, title, setSelectedPage }) => {
         theme === 'dark' && classes.themeMode
       }`}
     >
-      <motion.div
-        className={classes.container}
-        onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}
-      >
+      <motion.div className={classes.container}>
         {/* Title */}
         <motion.div
           initial='hidden'
