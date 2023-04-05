@@ -1,12 +1,12 @@
-import React from "react";
-import Copyright from "../Copyright/Copyright";
-import classes from "./Footer.module.css";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import React from 'react';
+import Copyright from '../Copyright/Copyright';
+import classes from './Footer.module.css';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
-    <div className={classes.footer}>
+    <footer className={classes.footer}>
       <div className={classes.container}>
         <div className={classes.row}>
           <div className={classes.col_lg_12}>
@@ -28,7 +28,7 @@ export const Footer = () => {
       <section>
         <Copyright />
       </section>
-    </div>
+    </footer>
   );
 };
 
