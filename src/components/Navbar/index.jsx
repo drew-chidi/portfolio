@@ -42,7 +42,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       : null;
 
   return (
-    <div className={`${classes.header} ${active_scroll}`}>
+    <header className={`${classes.header} ${active_scroll}`}>
       <div className={classes.container}>
         <div className={classes.logoWrap}>
           <img src={Drew} alt='Andrew' />
@@ -166,7 +166,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

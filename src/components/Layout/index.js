@@ -1,17 +1,15 @@
+import React, { Fragment } from 'react';
 import Footer from 'components/Footer';
 import Navbar from 'components/Navbar';
-import React from 'react';
 
-const index = ({ children }) => {
+const Layout = ({ children }) => {
   return (
-    <div>
-      <header>
-        <Navbar />
-      </header>
+    <Fragment>
+      <Navbar />
       <main>{children}</main>
       <Footer />
-    </div>
+    </Fragment>
   );
 };
 
-export default index;
+export default Layout;
