@@ -11,10 +11,8 @@
   background-color: #1e1f23;
 }
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  margin: auto;
+  padding: 0 20px;
   width: 100%;
 }
 .section_heading {
@@ -28,8 +26,26 @@
 /*************************/
 /*     Media Queries     */
 /*************************/
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
 @media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
   .section_heading {
     font-size: 2.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
   }
 }

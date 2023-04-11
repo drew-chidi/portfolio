@@ -27,9 +27,7 @@ const Contact = ({ setSelectedPage }) => {
           <div className={classes.row}>
             <div className={classes.col_lg_12}>
               <p className={classes.p_heading}>
-                Have a new project in mind? Let's collaborate and build
-                something awesome. Let's turn that idea to an even greater
-                product :){' '}
+                Get in touch
                 <address>
                   <a class='blue no-line' href='mailto:chidi.andrew@gmail.com'>
                     <AiOutlineMail /> chidi.andrew@gmail.com
