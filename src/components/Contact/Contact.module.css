@@ -7,22 +7,16 @@
 }
 .container {
   width: 100%;
-  /* padding-right: 15px;
-  padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
-  /* margin-right: -15px;
-  margin-left: -15px; */
 }
 .col_lg_12 {
   position: relative;
   width: 100%;
-  /* padding-right: 15px;
-  padding-left: 15px; */
 }
 
 .p_heading {
