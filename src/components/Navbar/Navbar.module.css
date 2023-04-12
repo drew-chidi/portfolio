@@ -14,12 +14,12 @@
   z-index: 999;
 }
 
-.active_scroll_dark {
+/* .active_scroll_dark {
   background-color: var(--bg-gray-dark);
 }
 .active_scroll_light {
   background-color: var(--bg-gray-light);
-}
+} */
 
 .container {
   display: flex;

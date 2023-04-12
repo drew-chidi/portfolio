@@ -26,8 +26,14 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const body = document.querySelector('body');
+    body.setAttribute('data-theme', theme);
+  }, [theme]);
+
   return (
-    <div className={theme}>
+    // <div className={theme}>
+    <div>
       <header>
         <Navbar
           isTopOfPage={isTopOfPage}

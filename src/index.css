@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* Remove all predefined styles */
 * {
@@ -25,24 +25,38 @@ html {
 
 /* GLOBAL VARIABLES */
 :root {
-  --clr-primary-light: #007bff;
-  --bg-primary-light: #fff;
-  --bg-gray-light: #f8f9fa;
-  --clr-border-light: #d3d3d3;
+  --clr-primary: #007bff;
+  /* --clr-primary-light: #007bff; */
+  --bg-clr: #fff;
+  /* --bg-primary-light: #fff; */
+  /* --bg-gray-light: #f8f9fa; */
+  --bg-gray: #f8f9fa;
+  --clr-border: #d3d3d3;
   --clr-title-light: #343a40;
-  --clr-text-light: #212529;
+  /* --clr-text-light: #212529; */
+  --clr-text: #212529;
   --clr-input-light: #6c757d;
   --clr-title-dark: #f8f9fa;
-  --clr-text-dark: #f8f9fa;
+  /* --clr-text-dark: #f8f9fa; */
   --clr-input-dark: #ced4da;
-  --bg-gray-dark: #343a40;
-  --clr-primary-dark: #ffc107;
-  --bg-primary-dark: #343a40;
-  --clr-border-dark: #6c757d;
+  /* --bg-gray-dark: #343a40; */
+  /* --clr-primary-dark: #ffc107; */
+  /* --bg-primary-dark: #343a40; */
+  /* --clr-border-dark: #6c757d; */
 }
 
 /* Themes */
-.light {
+
+/* Dark theme styles */
+[data-theme='dark'] {
+  --clr-primary: #ffc107;
+  --bg-clr: #343a40;
+  --clr-text: #f8f9fa;
+  --bg-gray: #343a40;
+  --clr-border: #6c757d;
+}
+
+/* .light {
   background-color: var(--bg-primary-light);
   color: var(--clr-text-light);
 }
@@ -50,19 +64,30 @@ html {
 .dark {
   background-color: var(--bg-primary-dark);
   color: var(--clr-text-dark);
+} */
+
+/* Global Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--clr-text);
+  background-color: var(--bg-clr);
+}
+header {
+  background-color: var(--bg-gray);
+}
+hr {
+  border-top: 1px solid var(--clr-border);
+  width: 75%;
 }
 
 /* Custom Styles */
-body {
-  font-family: "Open Sans", sans-serif;
-}
 h1,
 h2,
 h3,
 h4,
 h5 {
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 div,

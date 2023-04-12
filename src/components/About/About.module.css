@@ -70,7 +70,7 @@
 }
 .service_title {
   padding: 8px 0;
-  border-bottom: 2px solid green;
+  border-bottom: 4px solid var(--clr-border);
   font-size: 1.25rem;
   margin-bottom: 0.5em;
 }
