@@ -62,7 +62,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           </div>
 
           {/* HAMBURGER MENU */}
-          <button
+          <div
             class={classes.navbar_toggler}
             type='button'
             onClick={toggleHandler}
@@ -75,7 +75,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 size={16}
               />
             )}
-          </button>
+          </div>
         </div>
       </div>
 

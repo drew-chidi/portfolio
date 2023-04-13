@@ -26,6 +26,7 @@ html {
 /* GLOBAL VARIABLES */
 :root {
   --clr-primary: #007bff;
+  --clr-primary-hover: rgb(0, 99, 204);
   /* --clr-primary-light: #007bff; */
   --bg-clr: #fff;
   /* --bg-primary-light: #fff; */
@@ -51,6 +52,7 @@ html {
 /* DARK THEME */
 [data-theme='dark'] {
   --clr-primary: #ffc107;
+  --clr-primary-hover: rgb(224, 168, 0);
   --bg-clr: #343a40;
   --clr-text: #f8f9fa;
   --bg-gray: #343a40;
@@ -85,15 +87,6 @@ hr {
 }
 
 /* Custom Styles */
-/* a:active {
-  color: var(--clr-primary);
-}
-a:hover {
-  color: #0062cc;
-}
-[data-theme='dark'] a:hover {
-  color: #e0a800;
-} */
 button {
   background-color: var(--clr-primary);
   color: #f5f5f5;
