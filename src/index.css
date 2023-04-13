@@ -85,6 +85,15 @@ hr {
 }
 
 /* Custom Styles */
+/* a:active {
+  color: var(--clr-primary);
+}
+a:hover {
+  color: #0062cc;
+}
+[data-theme='dark'] a:hover {
+  color: #e0a800;
+} */
 button {
   background-color: var(--clr-primary);
   color: #f5f5f5;

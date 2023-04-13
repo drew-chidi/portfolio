@@ -1,9 +1,11 @@
 .active {
-  color: rgb(236, 103, 54);
+  color: var(--clr-primary);
 }
-.link {
-  transition-duration: 500;
-}
+
 .link:hover {
-  color: coral;
+  color: #0062cc;
+}
+
+[data-theme='dark'] .link:hover {
+  color: #e0a800;
 }
