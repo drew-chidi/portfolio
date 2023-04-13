@@ -16,7 +16,7 @@ const About = ({ setSelectedPage }) => {
   const theme = useSelector((state) => state.theme.mode);
 
   // Invert Themes for skills List
-  let invertTheme = theme === 'dark' ? 'light' : 'dark';
+  let invertTheme = theme === 'dark' ? 'dark-invert' : 'light-invert';
 
   return (
     <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.About)}>
@@ -58,7 +58,7 @@ const About = ({ setSelectedPage }) => {
               {skills.map((data, i) => {
                 return (
                   <div key={i}>
-                    <p className={`${classes.skill} ${invertTheme}`}>
+                    <p className={`${classes.skill} ${invertTheme} `}>
                       {data.name}
                     </p>
                   </div>

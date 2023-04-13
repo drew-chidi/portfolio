@@ -49,7 +49,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         </div>
         <div className={classes.navLinks_theme_container}>
           {/* LIGHT & DARK THEMES TOGGLER */}
-          <button
+          <div
             class={classes.theme_toggler}
             type='button'
             onClick={handleTheme}
@@ -59,7 +59,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             ) : (
               <FaMoon className={classes.navbar_toggler_icon} size={16} />
             )}
-          </button>
+          </div>
 
           {/* HAMBURGER MENU */}
           <button

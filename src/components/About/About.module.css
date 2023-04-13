@@ -10,13 +10,7 @@
   background-color: #32363c;
   background-color: #1e1f23;
 }
-/* .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 100%;
-} */
+
 .section_heading {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -26,6 +20,7 @@
   /* border-color: black !important; */
   /* border-color: var(--text-color)!important; */
 }
+
 .row {
   display: flex;
   flex-direction: column;
