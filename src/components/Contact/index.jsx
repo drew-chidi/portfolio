@@ -129,7 +129,7 @@ const Contact = ({ setSelectedPage }) => {
                   )}
                 </div>
                 <div className={classes.form_group}>
-                  <button type='submit' class='form-control-submit-button'>
+                  <button type='submit' className={classes.submit_button}>
                     Submit
                   </button>
                 </div>
