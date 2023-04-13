@@ -119,3 +119,7 @@ tr {
   border: 0 solid;
   border-color: 1px solid gray;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
