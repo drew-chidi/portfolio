@@ -27,39 +27,19 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href='https://www.linkedin.com/in/andrew-ofuenweuche-797a31aa/'>
-                  GitHub
-                </a>
+                <a href='https://github.com/drew-chidi/'>GitHub</a>
               </li>
               <li>
-                <a href='https://www.linkedin.com/in/andrew-ofuenweuche-797a31aa/'>
-                  Twitter
-                </a>
+                <a href='https://www.twitter.com/first-name-gr8/'>Twitter</a>
               </li>
-              <li>
+              {/* <li>
                 <a href='https://www.linkedin.com/in/andrew-ofuenweuche-797a31aa/'>
                   Medium
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
-        {/* <div className={classes.row}>
-          <div className={classes.col_lg_12}>
-            <div className={classes.container}>
-              <span className={classes.social_link}>
-                <a href='https://www.linkedin.com/in/andrew-ofuenweuche-797a31aa/'>
-                  <FaLinkedin />
-                </a>
-              </span>
-              <span className={classes.social_link}>
-                <a href='https://github.com/drew-chidi/'>
-                  <FaGithub />
-                </a>
-              </span>
-            </div>
-          </div>
-        </div> */}
         <div className={classes.copyright_wrapper}>
           <hr className={classes.divider} />
           <p>© {'2021-present'}. Andrew Chidi. All rights reserved</p>{' '}

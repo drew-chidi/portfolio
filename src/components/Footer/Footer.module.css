@@ -14,7 +14,6 @@
   align-items: flex-start;
   gap: 2rem;
 }
-
 .imgWrapper {
   width: 32px;
 }
@@ -39,6 +38,7 @@
   margin: auto;
   padding: 0.5rem 0;
 }
+
 /*************************/
 /*     Media Queries     */
 /*************************/
