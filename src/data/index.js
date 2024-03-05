@@ -46,7 +46,10 @@ const skills = [
     name: 'HTML',
   },
   {
-    name: 'CSS',
+    name: 'CSS3',
+  },
+  {
+    name: 'SASS',
   },
   {
     name: 'Javascript',
@@ -68,6 +71,18 @@ const skills = [
   },
   {
     name: 'Typescript',
+  },
+  {
+    name: 'Python',
+  },
+  {
+    name: 'React-Native',
+  },
+  {
+    name: 'GIT',
+  },
+  {
+    name: 'SEO',
   },
 ];
 

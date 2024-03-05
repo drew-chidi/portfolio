@@ -52,7 +52,7 @@ const About = ({ setSelectedPage }) => {
 
           {/* Skills */}
           <div className={classes.row}>
-            <h3>Skills</h3>
+            <h3>Languages and Technologies</h3>
             <div className={`${classes.skills_wrapper}`}>
               {' '}
               {skills.map((data, i) => {
