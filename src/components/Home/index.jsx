@@ -35,7 +35,7 @@ const Home = ({ setSelectedPage }) => {
               <a
                 target='blank'
                 className={classes.btn_solid_lg}
-                href='https://drive.google.com/file/d/1TC-7-puRgXV6NenARXrW2L3q0kykf0Qw/view?usp=sharing'
+                href='https://docs.google.com/document/d/147PlLEjqzvAlXvWQGu2xGPe7U0zWMmDkBh_JWv1JZus/edit?usp=sharing'
               >
                 Download CV
               </a>
